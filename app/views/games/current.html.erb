@@ -1,0 +1,27 @@
+<h1>Current Schedule</h1>
+<table>
+  <thead>
+    <tr>
+      <th>Date/Time</th>
+      <th>Team 1</th>
+      <th>Team 2</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @games.each do |game| %>
+      <tr>
+        <td><%= game.datetime.strftime('%m/%d/%y - %I:%M') %></td>
+        <td><%= game.team1 %></td>
+        <td><%= game.team2 %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<h1>Teams</h1>
+<ul>
+  <% @teams.each do |team| %>
+    <li><%= team.name %></li>
+  <% end %>
+</ul>

@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  datetime: 2017-04-05 13:43:58
+  team1: MyString
+  team2: MyString
+  team1points: 9.99
+  team2points: 9.99
+  week: 1
+
+two:
+  datetime: 2017-04-05 13:43:58
+  team1: MyString
+  team2: MyString
+  team1points: 9.99
+  team2points: 9.99
+  week: 1
