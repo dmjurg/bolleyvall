@@ -1,4 +1,5 @@
 <h1>Current Schedule</h1>
+
 <table>
   <thead>
     <tr>
@@ -12,8 +13,8 @@
     <% @games.each do |game| %>
       <tr>
         <td><%= game.datetime.strftime('%m/%d/%y - %I:%M') %></td>
-        <td><%= game.home_team.name %></td>
-        <td><%= game.away_team.name %></td>
+        <td><%= link_to game.home_team.name, team_path(game.home_team.id) %></td>
+        <td><%= link_to game.away_team.name, team_path(game.away_team.id) %></td>
       </tr>
     <% end %>
   </tbody>

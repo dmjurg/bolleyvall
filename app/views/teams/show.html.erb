@@ -1,0 +1,23 @@
+<h1><%=@team.name%>'s Schedule</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Date/Time</th>
+      <th>Team 1</th>
+      <th>Team 2</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @games.each do |game| %>
+      <tr>
+        <td><%= game.datetime.strftime('%m/%d/%y - %I:%M') %></td>
+        <td><%= game.home_team.name %></td>
+        <td><%= game.away_team.name %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<p><%= link_to 'Back', root_path %></p>
