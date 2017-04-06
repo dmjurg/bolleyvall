@@ -12,8 +12,8 @@
     <% @games.each do |game| %>
       <tr>
         <td><%= game.datetime.strftime('%m/%d/%y - %I:%M') %></td>
-        <td><%= game.team1 %></td>
-        <td><%= game.team2 %></td>
+        <td><%= game.home_team.name %></td>
+        <td><%= game.away_team.name %></td>
       </tr>
     <% end %>
   </tbody>
