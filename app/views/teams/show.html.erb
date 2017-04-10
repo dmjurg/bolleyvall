@@ -5,7 +5,9 @@
     <tr>
       <th>Date/Time</th>
       <th>Team 1</th>
+      <th>Team 1 Points</th>
       <th>Team 2</th>
+      <th>Team 2 Points</th>
     </tr>
   </thead>
 
@@ -14,7 +16,9 @@
       <tr>
         <td><%= game.datetime.strftime('%m/%d/%y - %I:%M') %></td>
         <td><%= game.home_team.name %></td>
+        <td><%= game.team1points %></td>
         <td><%= game.away_team.name %></td>
+        <td><%= game.team2points %></td>
       </tr>
     <% end %>
   </tbody>
