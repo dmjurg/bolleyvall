@@ -21,8 +21,8 @@
 </table>
 
 <h1>Teams</h1>
-<ul>
+<ol>
   <% @teams.each do |team| %>
     <li><%= link_to team.name, team_path(team)%> <%= team.total_points %></li>
   <% end %>
-</ul>
+</ol>
