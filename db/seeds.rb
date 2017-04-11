@@ -54,10 +54,10 @@ games = Game.create([
     {datetime: w3l, home_team: team1, away_team: team3, team1points: '2.5', team2points: '0', week: '3'},
     {datetime: w3l, home_team: team4, away_team: team10, team1points: '0', team2points: '2.5', week: '3'},
 
-    {datetime: w4e, home_team: team1, away_team: team2, team1points: '', team2points: '', week: '4'},
-    {datetime: w4e, home_team: team3, away_team: team8, team1points: '', team2points: '', week: '4'},
-    {datetime: w4e, home_team: team4, away_team: team9, team1points: '', team2points: '', week: '4'},
-    {datetime: w4l, home_team: team5, away_team: team10, team1points: '', team2points: '', week: '4'},
-    {datetime: w4l, home_team: team6, away_team: team11, team1points: '', team2points: '', week: '4'},
-    {datetime: w4l, home_team: team7, away_team: team12, team1points: '', team2points: '', week: '4'}
+    {datetime: w4e, home_team: team1, away_team: team2, week: '4'},
+    {datetime: w4e, home_team: team3, away_team: team8, week: '4'},
+    {datetime: w4e, home_team: team4, away_team: team9, week: '4'},
+    {datetime: w4l, home_team: team5, away_team: team10, week: '4'},
+    {datetime: w4l, home_team: team6, away_team: team11, week: '4'},
+    {datetime: w4l, home_team: team7, away_team: team12, week: '4'}
   ])

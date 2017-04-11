@@ -19,11 +19,11 @@ ActiveRecord::Schema.define(version: 20170406160755) do
     t.datetime "datetime"
     t.string   "team1"
     t.string   "team2"
-    t.decimal  "team1points"
-    t.decimal  "team2points"
+    t.decimal  "team1points",  default: "0.0"
+    t.decimal  "team2points",  default: "0.0"
     t.integer  "week"
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
+    t.datetime "created_at",                   null: false
+    t.datetime "updated_at",                   null: false
     t.integer  "home_team_id"
     t.integer  "away_team_id"
     t.index ["away_team_id"], name: "index_games_on_away_team_id", using: :btree
